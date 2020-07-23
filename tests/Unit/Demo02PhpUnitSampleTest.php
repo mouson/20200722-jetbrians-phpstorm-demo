@@ -69,4 +69,32 @@ class Demo02PhpUnitSampleTest extends TestCase
         $this->assertEquals(0, $actual);
     }
 
+
+    /**
+     * Demo 01 透過 PhpStorm 快速建立物件
+     * Step 1 建立物件
+     *     * 建立物件
+     *     * use Calculator
+     * Step 2 建立加法 method
+     *     * 複製 TestMethod
+     *     * 實作 add method
+     * Step 3 複製 TestMethod 實作加法演算法
+     *     * 透過 ideavim 快速複製 method
+     *
+     * @return void
+     */
+    public function testCalculatorShouldUsedAddWithTwoAttribute()
+    {
+        /** Arrange */
+        $target = new Calculator();
+        /** Assume */
+
+        /** Act */
+        $actual = $target->add(2, 3);
+
+        /** Assert */
+        $this->assertEquals(5, $actual);
+    }
+
+
 }
