@@ -2,6 +2,7 @@
 
 namespace Tests\Unit;
 
+use App\Calculator;
 use PHPUnit\Framework\TestCase;
 
 class Demo02PhpUnitSampleTest extends TestCase
@@ -32,13 +33,13 @@ class Demo02PhpUnitSampleTest extends TestCase
     public function testShouldUsedCalculator()
     {
         /** Arrange */
-        $target = new \App\Calculator();
+        $target = new Calculator();
         /** Assume */
 
         /** Act */
 
         /** Assert */
-        $this->assertInstanceOf(\App\Calculator::class, $target);
+        $this->assertInstanceOf(Calculator::class, $target);
     }
 
 }
