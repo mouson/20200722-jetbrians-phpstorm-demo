@@ -12,4 +12,8 @@ class Calculator
     {
     }
 
+    public function add(int $first, int $second)
+    {
+        return 0;
+    }
 }
