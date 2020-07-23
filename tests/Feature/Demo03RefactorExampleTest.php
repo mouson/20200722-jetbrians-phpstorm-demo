@@ -20,7 +20,7 @@ class Demo03RefactorExampleTest extends TestCase
         $response = $this->get('/demo03-ex01');
 
         $response->assertStatus(200);
-        $response->assertSee('StrStr');
+        $response->assertSee('StrStrStr');
     }
 
     public function testDemo02_HiName()
